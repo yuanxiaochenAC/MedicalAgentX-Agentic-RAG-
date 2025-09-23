@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Finish",
+    "description": "Indicate the end of multi-step reasoning.",
+    "parameter": {
+      "type": "object",
+      "properties": null
+    }
+  },
+  {
+    "name": "Tool_RAG",
+    "description": "Retrieve related tools from the toolbox based on the provided description",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "The description of the tool capability required.",
+          "required": true
+        },
+        "limit": {
+          "type": "integer",
+          "description": "The number of tools to retrieve",
+          "required": true
+        }
+      }
+    },
+    "required": [
+      "description",
+      "limit"
+    ]
+  },
+  {
+    "name": "CallAgent",
+    "description": "Give a solution plan to the agent and let it solve the problem. Solution plan should reflect a distinct method, approach, or viewpoint to solve the given question. Call these function multiple times, and each solution plan should start with different aspects of the question, for example, genes, phenotypes, diseases, or drugs, etc. The CallAgent will achieve the task based on the plan, so only give the plan instead of unverified information.",
+    "parameter": {
+      "type": "object",
+      "properties": 
+      {
+        "solution": {
+          "type": "string",
+          "description": "A feasible and concise solution plan that address the question.",
+          "required": true
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tooluniverse"
+version = "0.2.0"
+description = "A comprehensive collection of biomedical tools for Agentic AI, offering integration with the ToolUniverse SDK and MCP Server to support advanced biomedical workflows."
+authors = [
+    { name = "Shanghua Gao", email = "shanghuagao@gmail.com" }
+]
+dependencies = [
+    "requests",
+    "numpy",
+    "graphql-core",
+    "fastapi",
+    "uvicorn",
+    "fastmcp",
+    "pydantic",
+    "pyyaml"
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/mims-harvard/TxAgent"
+
+[project.scripts]
+tooluniverse-mcp = "tooluniverse.mcp_server:run_server"
+tooluniverse-mcp-claude = "tooluniverse.mcp_server:run_claude_desktop"
+generate-mcp-tools = "tooluniverse.generate_mcp_tools:run_generate"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tooluniverse = ["data/*"]

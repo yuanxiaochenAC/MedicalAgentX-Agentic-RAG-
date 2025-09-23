@@ -1,0 +1,118 @@
+[
+    {
+        "name": "get_joint_associated_diseases_by_HPO_ID_list",
+        "description": "Retrieve diseases associated with a list of phenotypes or symptoms by a list of HPO IDs.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "HPO_ID_list": {
+                    "type": "array",
+                    "description": "List of phenotypes or symptoms",
+                    "items": {
+                        "type": "string",
+                        "description": "The HPO ID of the phenotype or symptom.",
+                        "required": true
+                    },
+                    "required": true
+                },
+                "limit": {
+                    "type": "integer",
+                    "description": "Number of entries to fetch.",
+                    "required": false
+                },
+                "offset": {
+                    "type": "integer",
+                    "description": "Number of initial entries to skip.",
+                    "required": false
+                }
+            }
+        },
+        "query_schema": {
+            "category": [
+                "biolink:DiseaseToPhenotypicFeatureAssociation"
+            ],
+            "object": null,
+            "compact": true,
+            "object_category": [
+                "biolink:PhenotypicFeature"
+            ],
+            "limit": 500,
+            "offset": 0
+        },
+        "label": [
+            "Monarch",
+            "Phenotype",
+            "Symptom",
+            "Disease",
+            "HPO_ID"
+        ],
+        "type": "MonarchDiseasesForMultiplePheno",
+        "tool_url": "/association"
+    },
+    {
+        "name": "get_phenotype_by_HPO_ID",
+        "description": "Retrieve a phenotype or symptom by its HPO ID.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The HPO ID of the phenotype or symptom.",
+                    "required": true
+                }
+            }
+        },
+        "query_schema": {
+            "id": null,
+            "url_key": "id"
+        },
+        "label": [
+            "Monarch",
+            "Phenotype",
+            "Symptom",
+            "HPO_ID"
+        ],
+        "type": "Monarch",
+        "tool_url": "/entity/{url_key}"
+    },
+    {
+        "name": "get_HPO_ID_by_phenotype",
+        "description": "Retrieve the HPO ID of a phenotype or symptom.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "One query phenotype or symptom.",
+                    "required": true
+                },
+                "limit": {
+                    "type": "integer",
+                    "description": "Number of entries to fetch.",
+                    "required": false
+                },
+                "offset": {
+                    "type": "integer",
+                    "description": "Number of initial entries to skip.",
+                    "required": false
+                }
+            }
+        },
+        "query_schema": {
+            "query": null,
+            "category": [
+                "biolink:PhenotypicFeature"
+            ],
+            "limit": 20,
+            "offset": 0
+        },
+        "label": [
+            "Monarch",
+            "Phenotype",
+            "Symptom",
+            "HPO_ID"
+        ],
+        "type": "Monarch",
+        "tool_url": "/search"
+    }
+]
