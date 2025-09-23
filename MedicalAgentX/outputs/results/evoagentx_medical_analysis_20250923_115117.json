@@ -1,0 +1,129 @@
+{
+  "query": "患者男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻",
+  "timestamp": "2025-09-23T11:51:17.144984",
+  "executor_type": "EvoAgentX",
+  "workflow_config": {
+    "goal": "执行基于AI的医疗病例分析，提供诊断支持和治疗建议",
+    "tasks_count": 4,
+    "llm_model": "gpt-4"
+  },
+  "results": {
+    "retriever_output": {
+      "similar_cases": "检索到的相关医学案例:\n\n案例 1 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: –49.\n27. Zhao Y, Ke Z, He W, Cai Z. Volume of white matter\nhyperintensities increases with blood pressure in\npatients with hypertension. J Int Med Res 2019; 47:\n3681 –3689.\n28. Avasthi P, Marshall WF. Impact of Normal Aging ver-\nsus Hypertension, Abnormal BMI and Diabetes on\nWhite Matter Hyperintensity Volume. Int Soc Diﬀer\n2012; 83:1–29.\n29. Palacio S, McClure LA, Benavente OR, Bazan C, Per-\ngola P, Hart RG. Lacunar Strokes in Patients With\n©2020 The Authors. European Journal of Neurology published by John Wiley & Sons Ltd on behalf of European Academy of NeurologyEAN GUIDELINE ON MEDICAL MANAGEMENT ISSUES IN DEMENTIA 13\nDiabetes Mellitus: Risk Factors, Infarct Location, and\nPrognosis. Stroke 2014; 45:2689 –2694.\n30. Mast H, Thompson JL, Lee SH, Mohr JP, Sacco RL.\nHypertension and diabetes mellitus as determinants of\nmultiple lacunar infarcts. Stroke 1995; 26:30–33.\n31. Elmst /C23ahl S, Ellstr €om K, Siennicki-Lantz A, Abul-\nKasim K.\n--------------------------------------------------\n\n案例 2 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: ohort study was iden-\ntiﬁed which reported on dementia patients with allthree vascular risk factors [41] (Figure S2 andTables S3 and S7). Twenty patients were followed fora mean (SD) of 30 (6) months. Treatment of one ormore vascular risk factors was associated with lessdecline on Mini Mental State Examination [mean dif-ference 2 (95 % CI /C03.1 to 7.2)] compared to no\ntreatment at all (Table S8). The study did not report\ndata on the three remaining outcomes. No grading ofevidence, using the GRADE framework, was carriedout since it was the opinion of the authors that theevidence was insuﬃcient to make a recommendation.Financial disclosures and a statement on conﬂict ofinterest were reported for the study (Table S1).\nLevel of evidence\nNot applicable.\n--------------------------------------------------\n\n案例 3 (相似度: 1.0000)\n来源: Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf\n内容: acy between different treatments?\nIntroduction\nInitial symptoms of narcolepsy occur before the age of 18 in over \n50% of patients [1] and may start at a very young age also before \npuberty onset [23]. The nature of narcoleptic symptoms in childhood \nand adolescence such as cataplexy and EDS differs from the adult \npicture and may change over time [24]. Treatment strategies includ -\ning a non-  pharmacological approach are different from adult strat -\negies and require taking into account the developmental aspects. \nParticular attention is needed when evaluating safety and the risk- \nto- benefit ratio of any treatment. Potential treatment side effects \nsuch as mood disorder and metabolic upset leading to weight gain or \nloss should be proactively assessed.To date there are no established recommendations for the \nuse of narcoleptic drugs when considering pubertal development.\n--------------------------------------------------\n\n案例 4 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: Lee SH, Mohr JP, Sacco RL.\nHypertension and diabetes mellitus as determinants of\nmultiple lacunar infarcts. Stroke 1995; 26:30–33.\n31. Elmst /C23ahl S, Ellstr €om K, Siennicki-Lantz A, Abul-\nKasim K. Association between cerebral microbleedsand hypertension in the Swedish general population\n“Good Aging in Sk /C23ane” study. J Clin Hypertens 2019;\n21:1099 –1107.\n32. Malik AH, Yandrapalli S, Aronow WS, Panza JA,\nCooper HA. Meta-analysis of direct-acting oral antico-\nagulants compared with warfarin in patients >75 Years\nof Age. Am J Cardiol 2019; 123: 2051 –2057.\n33. Culebras A, Messe SR, Chaturvedi S, Kase CS, Gron-\nseth G. Summary of evidence-based guideline update:\nPrevention of stroke in nonvalvular atrial ﬁbrillation:\nReport of the Guideline Development Subcommittee ofthe American Academy of Neurology. Neurology 2014;\n82:716–724.\n34. Ringleb PA, Bousser MG, Ford G, et al. Guidelines\nfor management of ischaemic stroke and transientischaemic attack 2008.\n--------------------------------------------------\n\n案例 5 (相似度: 1.0000)\n来源: Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf\n内容: ailable evidence and expert experience. Nevertheless, \namongst patients there is considerable inter-  individual variation in \nthe efficacy and side effect profile of all commonly used medica -\ntions. This necessitates a precise individual treatment plan for each \npatient, contingent on their pattern of symptoms, disease severity \nand comorbid conditions. This may lead to (co-  )treatment with sub -\nstances that have traditionally been used in the treatment of narco -\nlepsy but have not been studied properly in trials.\n 14681331, 2021, 9, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/ene.14888 by CochraneChina, Wiley Online Library on [02/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.\n--------------------------------------------------\n\n",
+      "retrieval_metadata": "{\"corpus_name\": \"medical_cases\", \"top_k\": 5, \"timestamp\": \"2025-09-23T11:49:49.960754\"}"
+    },
+    "reasoner_output": {
+      "medical_analysis": "## 症状分析\n- 主要症状特征和临床意义：患者出现眼球充血、咳嗽、打喷嚏、流泪、腹泻等症状，这些症状可能表明患者存在上呼吸道感染或者过敏反应，同时伴有消化系统疾病。\n- 伴随症状的重要性：眼球充血、咳嗽、打喷嚏、流泪这些症状可能是由于过敏或者感染引起的，腹泻可能是由于消化系统疾病或者食物中毒引起的。\n- 症状发展模式：如果症状是突然出现的，可能是食物中毒或者急性感染，如果症状是慢慢出现并且持续存在的，可能是慢性疾病或者过敏反应。\n\n## 可能病因\n- 最可能的3-5个诊断方向：1）急性上呼吸道感染 2）过敏性鼻炎 3）食物中毒 4）消化系统疾病 5）病毒性感冒\n- 每个诊断的支持证据：急性上呼吸道感染和病毒性感冒可以引起咳嗽、打喷嚏、流泪等症状，过敏性鼻炎可以引起眼球充血、打喷嚏、流泪等症状，食物中毒和消化系统疾病可以引起腹泻。\n- 病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。\n\n## 鉴别诊断\n- 需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。\n- 鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。\n\n## 检查建议\n- 必要的实验室检查：血常规、尿常规、大便常规、过敏原检测\n- 影像学检查建议：胸部X线检查\n- 特殊检查项目：鼻咽部分泌物培养\n\n## 风险评估\n- 病情严重程度：根据患者的症状，病情可能属于中度，需要及时就医。\n- 可能的并发症：如果不及时治疗，可能会引起脱水、电解质紊乱等并发症。\n- 紧急程度评估：根据患者的症状，应尽快就医。\n\n以上分析仅供参考，具体诊断和治疗还需要根据患者的具体情况和医生的专业判断。",
+      "primary_diagnoses": "- 病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。\n- 需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。\n- 鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。",
+      "recommended_tests": "- 病情严重程度：根据患者的症状，病情可能属于中度，需要及时就医。"
+    },
+    "tools_output": {
+      "tool_consultation": "## 药物指导\n- 相关治疗药物选择：如果是上呼吸道感染，可能需要抗生素如阿莫西林；如果是过敏性鼻炎，可能需要抗过敏药物如非诺贝特；如果是食物中毒或消化系统疾病，可能需要消炎药物和调节肠道菌群的药物如普瑞巴特。\n- 用药注意事项：请按照医生的指示服用药物，不要自行增减剂量或停药。如果出现任何不适，请立即告知医生。\n- 可能的药物相互作用：抗生素可能与一些药物如避孕药有相互作用，抗过敏药物可能与一些药物如抗抑郁药有相互作用。\n\n## 诊断标准\n- 相关疾病的诊断标准：通常需要结合临床症状、实验室检查和影像学检查来确定诊断。\n- 临床指南参考：可以参考《急性上呼吸道感染诊疗指南》、《过敏性鼻炎诊疗指南》、《食物中毒诊疗指南》等。\n- 最新研究进展：可以关注相关领域的最新研究，了解新的诊断方法和治疗方案。\n\n## 治疗建议\n- 标准治疗方案：通常需要结合药物治疗、生活方式调整和症状缓解措施来治疗。\n- 个体化治疗考虑：根据患者的具体情况，可能需要调整治疗方案，例如对于有药物过敏史的患者，需要避免使用可能引起过敏反应的药物。\n- 预后评估：如果及时就医并得到正确治疗，预后通常良好。\n\n## 预防措施\n- 疾病预防要点：注意个人卫生，避免接触过敏原，避免食用可能引起食物中毒的食物。\n- 生活方式建议：保持健康的生活方式，包括合理饮食、适量运动、充足睡眠和避免压力。\n- 随访计划：根据病情，可能需要定期复查和随访。\n\n以上建议基于循证医学，但具体诊断和治疗还需要根据患者的具体情况和医生的专业判断。",
+      "additional_guidance": "## 药物指导\n- 相关治疗药物选择：如果是上呼吸道感染，可能需要抗生素如阿莫西林；如果是过敏性鼻炎，可能需要抗过敏药物如非诺贝特；如果是食物中毒或消化系统疾病，可能需要消炎药物和调节肠道菌群的药物如普瑞巴特。\n- 用药注意事项：请按照医生的指示服用药物，不要自行增减剂量或停药。如果出现任何不适，请立即告知医生。\n- 可能的药物相互作用：抗生素可能与一些药物如避孕药有相互作用，抗过敏药物可能与一些药物如抗抑郁药有相互作用。\n\n## 诊断标准\n- 相关疾病的诊断标准：通常需要结合临床症状、实验室检查和影像学检查来确定诊断。\n- 临床指南参考：可以参考《急性上呼吸道感染诊疗指南》、《过敏性鼻炎诊疗指南》、《食物中毒诊疗指南》等。\n- 最新研究进展：可以关注相关领域的最新研究，了解新的诊断方法和治疗方案。\n\n## 治疗建议\n- 标准治疗方案：通常需要结合药物治疗、生活方式调整和症状缓解措施来治疗。\n- 个体化治疗考虑：根据患者的具体情况，可能需要调整治疗方案，例如对于有药物过敏史的患者，需要避免使用可能引起过敏反应的药物。\n- 预后评估：如果及时就医并得到正确治疗，预后通常良好。\n\n## 预...",
+      "tooluniverse_results": {
+        "status": "success",
+        "comprehensive_results": {
+          "drug_information": {},
+          "disease_information": {
+            "病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。": {
+              "status": "mock",
+              "tool": "mock_disease_search",
+              "query": "病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。",
+              "results": {
+                "message": "模拟搜索疾病 '病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。' 的信息",
+                "recommendations": [
+                  "请参考权威医学指南",
+                  "建议进行相关检查确诊",
+                  "及时就医获取专业诊疗"
+                ]
+              }
+            },
+            "需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。": {
+              "status": "mock",
+              "tool": "mock_disease_search",
+              "query": "需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。",
+              "results": {
+                "message": "模拟搜索疾病 '需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。' 的信息",
+                "recommendations": [
+                  "请参考权威医学指南",
+                  "建议进行相关检查确诊",
+                  "及时就医获取专业诊疗"
+                ]
+              }
+            },
+            "鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。": {
+              "status": "mock",
+              "tool": "mock_disease_search",
+              "query": "鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。",
+              "results": {
+                "message": "模拟搜索疾病 '鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。' 的信息",
+                "recommendations": [
+                  "请参考权威医学指南",
+                  "建议进行相关检查确诊",
+                  "及时就医获取专业诊疗"
+                ]
+              }
+            }
+          },
+          "treatment_guidelines": {
+            "病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。": {
+              "status": "mock",
+              "tool": "mock_treatment_guidelines",
+              "query": "病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。",
+              "results": {
+                "message": "模拟搜索 '病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。' 的治疗指南",
+                "recommendations": [
+                  "请参考最新的临床诊疗指南",
+                  "结合患者具体情况制定治疗方案",
+                  "定期评估治疗效果并调整方案"
+                ]
+              }
+            },
+            "需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。": {
+              "status": "mock",
+              "tool": "mock_treatment_guidelines",
+              "query": "需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。",
+              "results": {
+                "message": "模拟搜索 '需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。' 的治疗指南",
+                "recommendations": [
+                  "请参考最新的临床诊疗指南",
+                  "结合患者具体情况制定治疗方案",
+                  "定期评估治疗效果并调整方案"
+                ]
+              }
+            },
+            "鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。": {
+              "status": "mock",
+              "tool": "mock_treatment_guidelines",
+              "query": "鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。",
+              "results": {
+                "message": "模拟搜索 '鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。' 的治疗指南",
+                "recommendations": [
+                  "请参考最新的临床诊疗指南",
+                  "结合患者具体情况制定治疗方案",
+                  "定期评估治疗效果并调整方案"
+                ]
+              }
+            }
+          },
+          "search_summary": "成功检索了3个疾病的相关信息, 获取了3个疾病的治疗指南。"
+        },
+        "tools_used": [
+          "mock_tools"
+        ]
+      },
+      "real_medical_tools": {
+        "tooluniverse_available": true,
+        "tool_engine_initialized": false,
+        "medical_tools_count": 0,
+        "medical_tools": []
+      }
+    },
+    "report_output": {
+      "comprehensive_report": "# 医学综合分析报告\n\n## 执行摘要\n患者，男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻等症状。可能的诊断包括急性上呼吸道感染，过敏性鼻炎，食物中毒和消化系统疾病。建议进行血常规，尿常规，大便常规，过敏原检测和胸部X线检查。治疗方案可能包括抗生素，抗过敏药物和消炎药物。\n\n## 1. 病例基本信息\n患者男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻等症状。\n\n## 2. 相似病例参考\n相关医学案例已检索，但无直接相关病例。\n\n## 3. 临床分析\n### 3.1 症状分析\n患者出现眼球充血、咳嗽、打喷嚏、流泪、腹泻等症状，可能存在上呼吸道感染或者过敏反应，同时伴有消化系统疾病。\n### 3.2 可能诊断\n最可能的诊断方向包括：1）急性上呼吸道感染 2）过敏性鼻炎 3）食物中毒 4）消化系统疾病 5）病毒性感冒\n### 3.3 鉴别诊断\n需要排除的疾病包括结膜炎、哮喘、胃肠炎等。\n\n## 4. 检查建议\n### 4.1 必需检查\n血常规、尿常规、大便常规、过敏原检测\n### 4.2 选择性检查\n胸部X线检查，鼻咽部分泌物培养\n\n## 5. 治疗指导\n### 5.1 药物治疗\n如果是上呼吸道感染，可能需要抗生素如阿莫西林；如果是过敏性鼻炎，可能需要抗过敏药物如非诺贝特；如果是食物中毒或消化系统疾病，可能需要消炎药物和调节肠道菌群的药物如普瑞巴特。\n### 5.2 非药物治疗\n保持良好的生活习惯，避免接触过敏源，保持饮食卫生。\n### 5.3 生活指导\n保持健康的生活方式，包括合理饮食、适量运动、充足睡眠和避免压力。\n\n## 6. 风险管理\n### 6.1 并发症预防\n如果不及时治疗，可能会引起脱水、电解质紊乱等并发症。\n### 6.2 随访计划\n根据病情，可能需要定期复查和随访。\n\n## 7. 专业建议\n### 7.1 临床决策支持\n具体诊断和治疗还需要根据患者的具体情况和医生的专业判断。\n### 7.2 进一步咨询建议\n如果症状持续或者加重，应尽快就医。\n\n## 免责声明\n本报告基于AI辅助分析，仅供医疗专业人员参考。最终诊断需要医师结合完整临床信息做出。",
+      "executive_summary": "患者，男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻等症状。可能的诊断包括急性上呼吸道感染，过敏性鼻炎，食物中毒和消化系统疾病。建议进行血常规，尿常规，大便常规，过敏原检测和胸部X线检查。治疗方案可能包括抗生素，抗过敏药物和消炎药物。"
+    },
+    "comprehensive_report": "# 医学综合分析报告\n\n## 执行摘要\n患者，男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻等症状。可能的诊断包括急性上呼吸道感染，过敏性鼻炎，食物中毒和消化系统疾病。建议进行血常规，尿常规，大便常规，过敏原检测和胸部X线检查。治疗方案可能包括抗生素，抗过敏药物和消炎药物。\n\n## 1. 病例基本信息\n患者男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻等症状。\n\n## 2. 相似病例参考\n相关医学案例已检索，但无直接相关病例。\n\n## 3. 临床分析\n### 3.1 症状分析\n患者出现眼球充血、咳嗽、打喷嚏、流泪、腹泻等症状，可能存在上呼吸道感染或者过敏反应，同时伴有消化系统疾病。\n### 3.2 可能诊断\n最可能的诊断方向包括：1）急性上呼吸道感染 2）过敏性鼻炎 3）食物中毒 4）消化系统疾病 5）病毒性感冒\n### 3.3 鉴别诊断\n需要排除的疾病包括结膜炎、哮喘、胃肠炎等。\n\n## 4. 检查建议\n### 4.1 必需检查\n血常规、尿常规、大便常规、过敏原检测\n### 4.2 选择性检查\n胸部X线检查，鼻咽部分泌物培养\n\n## 5. 治疗指导\n### 5.1 药物治疗\n如果是上呼吸道感染，可能需要抗生素如阿莫西林；如果是过敏性鼻炎，可能需要抗过敏药物如非诺贝特；如果是食物中毒或消化系统疾病，可能需要消炎药物和调节肠道菌群的药物如普瑞巴特。\n### 5.2 非药物治疗\n保持良好的生活习惯，避免接触过敏源，保持饮食卫生。\n### 5.3 生活指导\n保持健康的生活方式，包括合理饮食、适量运动、充足睡眠和避免压力。\n\n## 6. 风险管理\n### 6.1 并发症预防\n如果不及时治疗，可能会引起脱水、电解质紊乱等并发症。\n### 6.2 随访计划\n根据病情，可能需要定期复查和随访。\n\n## 7. 专业建议\n### 7.1 临床决策支持\n具体诊断和治疗还需要根据患者的具体情况和医生的专业判断。\n### 7.2 进一步咨询建议\n如果症状持续或者加重，应尽快就医。\n\n## 免责声明\n本报告基于AI辅助分析，仅供医疗专业人员参考。最终诊断需要医师结合完整临床信息做出。",
+    "executive_summary": "患者，男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻等症状。可能的诊断包括急性上呼吸道感染，过敏性鼻炎，食物中毒和消化系统疾病。建议进行血常规，尿常规，大便常规，过敏原检测和胸部X线检查。治疗方案可能包括抗生素，抗过敏药物和消炎药物。"
+  }
+}

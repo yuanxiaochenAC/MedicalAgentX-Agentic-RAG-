@@ -1,0 +1,228 @@
+name: IntegrationAgent
+type: llm
+model: gpt-4
+description: 综合分析所有信息，生成完整的医学诊断报告
+
+config:
+  temperature: 0.2
+  max_tokens: 3000
+  model_params:
+    top_p: 0.95
+    frequency_penalty: 0.0
+    presence_penalty: 0.1
+
+system_prompt: |
+  你是一位资深的主治医师和医学报告专家，负责整合各种医学信息生成综合性诊断报告。
+  
+  你的核心职责：
+  1. 整合病例检索、AI推理分析和医学工具查询结果
+  2. 生成结构化、专业的医学分析报告
+  3. 确保信息的准确性和完整性
+  4. 提供实用的临床建议
+  5. 强调医学伦理和患者安全
+  
+  报告标准：
+  - 遵循医学文献写作规范
+  - 使用准确的医学术语
+  - 逻辑清晰，层次分明
+  - 客观中立，基于证据
+  - 强调局限性和免责声明
+
+prompt_template: |
+  ## 医学综合分析报告生成任务
+  
+  ### 输入信息汇总：
+  
+  #### 1. 患者主诉症状：
+  {{ symptom_text }}
+  
+  #### 2. 病例检索分析：
+  {% if retrieval_results.status == "success" %}
+  - 检索到 {{ retrieval_results.total_results }} 个相似病例
+  - 相似度评分：{{ retrieval_results.similarity_scores }}
+  - 主要病例来源：{{ retrieval_results.sources }}
+  {% else %}
+  - 病例检索状态：{{ retrieval_results.status }}
+  - 错误信息：{{ retrieval_results.error }}
+  {% endif %}
+  
+  #### 3. AI推理分析结果：
+  {% if reasoning_results.status == "success" %}
+  {{ reasoning_results.medical_analysis }}
+  
+  **主要诊断方向：**
+  {% for diagnosis in reasoning_results.primary_diagnoses %}
+  - {{ diagnosis }}
+  {% endfor %}
+  
+  **建议检查：**
+  {% for test in reasoning_results.recommended_tests %}
+  - {{ test }}
+  {% endfor %}
+  
+  **风险等级：** {{ reasoning_results.risk_level }}
+  **紧急程度：** {{ reasoning_results.urgency }}
+  {% else %}
+  - AI推理状态：{{ reasoning_results.status }}
+  - 错误信息：{{ reasoning_results.error }}
+  {% endif %}
+  
+  #### 4. 医学工具查询结果：
+  {% if tool_results.status == "success" %}
+  **药物信息：**
+  {{ tool_results.drug_information }}
+  
+  **诊断指南：**
+  {{ tool_results.diagnostic_guidelines }}
+  
+  **治疗建议：**
+  {{ tool_results.treatment_recommendations }}
+  
+  **工具查询摘要：**
+  {{ tool_results.tool_query_summary }}
+  {% else %}
+  - 工具查询状态：{{ tool_results.status }}
+  - 错误信息：{{ tool_results.error }}
+  {% endif %}
+  
+  ---
+  
+  ## 生成要求：
+  
+  请基于上述所有信息，生成一份完整的**医学综合分析报告**，使用以下结构：
+  
+  # 医学综合分析报告
+  
+  ## 1. 病例概述
+  - 患者主诉症状总结
+  - 症状特点分析
+  - 初步印象
+  
+  ## 2. 相似病例分析
+  - 检索病例匹配情况
+  - 相似病例关键信息
+  - 病例对比分析
+  
+  ## 3. 临床分析
+  ### 3.1 症状分析
+  - 主要症状解读
+  - 伴随症状意义
+  - 症状群组合特征
+  
+  ### 3.2 可能诊断
+  - 最可能诊断（按概率排序）
+  - 诊断依据
+  - 鉴别诊断要点
+  
+  ### 3.3 病理生理机制
+  - 可能的发病机制
+  - 病理过程分析
+  
+  ## 4. 检查建议
+  ### 4.1 必需检查
+  - 基础实验室检查
+  - 必要影像学检查
+  
+  ### 4.2 选择性检查
+  - 根据诊断需要的特殊检查
+  - 鉴别诊断相关检查
+  
+  ## 5. 治疗建议
+  ### 5.1 急性期处理
+  - 症状缓解措施
+  - 支持性治疗
+  
+  ### 5.2 针对性治疗
+  - 病因治疗方案
+  - 药物治疗选择
+  - 非药物治疗措施
+  
+  ## 6. 风险评估与管理
+  - 病情严重程度评估
+  - 可能并发症
+  - 风险管控措施
+  
+  ## 7. 随访建议
+  - 随访时间安排
+  - 随访重点观察指标
+  - 复查项目建议
+  
+  ## 8. 患者教育
+  - 疾病相关知识
+  - 生活方式建议
+  - 注意事项
+  
+  ## 9. 报告说明
+  ### 分析依据
+  - 相似病例数：{{ retrieval_results.total_results if retrieval_results.status == "success" else "0" }}
+  - AI分析模型：{{ reasoning_results.model if reasoning_results.status == "success" else "未知" }}
+  - 工具查询类型：{{ tool_results.tools_used if tool_results.status == "success" else "无" }}
+  
+  ### 重要声明
+  ⚠️ **重要提醒：**
+  1. 本报告基于AI辅助分析生成，仅供医疗专业人员参考
+  2. 最终诊断必须由有资质的医师结合完整临床信息做出
+  3. 任何治疗决策都应遵循临床指南和医疗规范
+  4. 如有紧急情况，请立即就医
+  5. 本报告不能替代正式的医疗咨询和临床检查
+  
+  ---
+  
+  **生成时间：** {{ current_timestamp }}
+  **报告版本：** MedicalAgentX v1.0
+
+inputs:
+  - name: symptom_text
+    type: string
+    description: 患者症状描述
+    required: true
+  - name: retrieval_results
+    type: object
+    description: 病例检索结果
+    required: true
+  - name: reasoning_results
+    type: object
+    description: AI推理分析结果
+    required: true
+  - name: tool_results
+    type: object
+    description: 医学工具查询结果
+    required: true
+  - name: current_timestamp
+    type: string
+    description: 当前时间戳
+    required: false
+
+outputs:
+  - name: comprehensive_report
+    type: string
+    description: 完整的医学综合分析报告
+  - name: key_findings
+    type: array
+    description: 关键发现列表
+  - name: urgent_alerts
+    type: array
+    description: 紧急提醒事项
+  - name: follow_up_plan
+    type: object
+    description: 随访计划
+  - name: report_metadata
+    type: object
+    description: 报告元数据
+
+execution:
+  timeout: 90
+  retry_count: 2
+  error_handling: graceful
+
+quality_metrics:
+  - completeness_score
+  - medical_accuracy_check
+  - readability_score
+  - clinical_relevance
+
+metadata:
+  version: "1.0"
+  report_type: "AI辅助医学综合分析"
+  target_audience: "医疗专业人员"
+  medical_disclaimer: true

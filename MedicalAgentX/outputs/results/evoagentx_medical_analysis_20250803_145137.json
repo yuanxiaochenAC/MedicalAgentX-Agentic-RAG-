@@ -1,0 +1,103 @@
+{
+  "query": "患者男性，58岁，近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高",
+  "timestamp": "2025-08-03T14:51:37.230168",
+  "executor_type": "EvoAgentX",
+  "workflow_config": {
+    "goal": "执行基于AI的医疗病例分析，提供诊断支持和治疗建议",
+    "tasks_count": 4,
+    "llm_model": "gpt-4"
+  },
+  "results": {
+    "retriever_output": {
+      "similar_cases": "检索到的相关医学案例:\n\n案例 1 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: ohort study was iden-\ntiﬁed which reported on dementia patients with allthree vascular risk factors [41] (Figure S2 andTables S3 and S7). Twenty patients were followed fora mean (SD) of 30 (6) months. Treatment of one ormore vascular risk factors was associated with lessdecline on Mini Mental State Examination [mean dif-ference 2 (95 % CI /C03.1 to 7.2)] compared to no\ntreatment at all (Table S8). The study did not report\ndata on the three remaining outcomes. No grading ofevidence, using the GRADE framework, was carriedout since it was the opinion of the authors that theevidence was insuﬃcient to make a recommendation.Financial disclosures and a statement on conﬂict ofinterest were reported for the study (Table S1).\nLevel of evidence\nNot applicable.\n--------------------------------------------------\n\n案例 2 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: –49.\n27. Zhao Y, Ke Z, He W, Cai Z. Volume of white matter\nhyperintensities increases with blood pressure in\npatients with hypertension. J Int Med Res 2019; 47:\n3681 –3689.\n28. Avasthi P, Marshall WF. Impact of Normal Aging ver-\nsus Hypertension, Abnormal BMI and Diabetes on\nWhite Matter Hyperintensity Volume. Int Soc Diﬀer\n2012; 83:1–29.\n29. Palacio S, McClure LA, Benavente OR, Bazan C, Per-\ngola P, Hart RG. Lacunar Strokes in Patients With\n©2020 The Authors. European Journal of Neurology published by John Wiley & Sons Ltd on behalf of European Academy of NeurologyEAN GUIDELINE ON MEDICAL MANAGEMENT ISSUES IN DEMENTIA 13\nDiabetes Mellitus: Risk Factors, Infarct Location, and\nPrognosis. Stroke 2014; 45:2689 –2694.\n30. Mast H, Thompson JL, Lee SH, Mohr JP, Sacco RL.\nHypertension and diabetes mellitus as determinants of\nmultiple lacunar infarcts. Stroke 1995; 26:30–33.\n31. Elmst /C23ahl S, Ellstr €om K, Siennicki-Lantz A, Abul-\nKasim K.\n--------------------------------------------------\n\n案例 3 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: of vascular risk factors\nin patients with dementia slow the progression of\ndementia?\nPICO question\nPopulation: Patients with dementia and hypertension,hypercholesterolemia and type 2diabetes mellitus.\nIntervention: Systematic management of vascular\nrisk factors (concomitant hypertension, hypercholes-\nterolemia, type 2 diabetes mellitus).\nComparator: Usual care.Outcome: 1. Institutionalization (Important), 2.\nGlobal cognitive function (Critical), 3. Mortality(Important), 4. ADL (Important).\n©2020 The Authors. European Journal of Neurology published by John Wiley & Sons Ltd on behalf of European Academy of NeurologyEAN GUIDELINE ON MEDICAL MANAGEMENT ISSUES IN DEMENTIA 5\nSummary of evidence\nOne single-center retrospective cohort study was iden-\ntiﬁed which reported on dementia patients with allthree vascular risk factors [41] (Figure S2 andTables S3 and S7). Twenty patients were followed fora mean (SD) of 30 (6) months.\n--------------------------------------------------\n\n案例 4 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: uier F. Treat-\nment of vascular risk factors is associated with slowerdecline in Alzheimer disease. Neurology 2009; 73:674–\n680.\n42. Lopponen M, Raiha I, Isoaho R, Vahlberg T, Puolijoki\nH, Kivela S-L. Dementia associates with undermedica-tion of cardiovascular diseases in the elderly: a popula-\ntion-based study. Dement Geriatr Cogn Disord 2006;\n22:132–141.\n43. Kennelly SP, Lawlor BA, Kenny RA. Blood pressure\nand dementia - a comprehensive review. Ther Adv Neu-\nrol Disord 2009; 2:241–260.\n44. Proctor WRHJ. Pain and cognitive status among nurs-\ning home residents in Canada. Pain Res Manag 2001;\n6:119–125.45. Husebo BS, Achterberg W, Flo E. Identifying and\nManaging Pain in People with Alzheimer’s disease and\nother types of dementia: a systematic review. CNS\nDrugs 2016; 30:481–497.\n46. Sampson EL, White N, Lord K, et al. Pain, agitation,\nand behavioural problems in people with dementiaadmitted to general hospital wards. Pain 2015; 156:\n675–683.\n47.\n--------------------------------------------------\n\n案例 5 (相似度: 1.0000)\n来源: ene.14412.pdf\n内容: ; 75:40–46.\n15. Higgins JPT, Altman DG, Gøtzsche PC, J €uni P, Moher\nD, Oxman AD. The Cochrane Collaboration’s tool for\nassessing risk of bias in randomised trials. BMJ 2011;\n343: 1–9.\n16. http://www.ohri.ca/programs/clinical_epidemiology/oxf\nord.asp.\n17. Tavassoli N, Perrin A, B /C19erard E, Gillette S, Vellas B,\nRolland Y. Factors associated with undertreatment ofatrial ﬁbrillation in geriatric outpatients with Alzhei-mer disease. Am J Cardiovasc Drugs 2013; 13:425–\n433.\n18. Rattinger GB, Dutcher SK, Chhabra PT, et al . The\neﬀect of dementia on medication use and adherence\namong medicare beneﬁciaries with chronic heart failure.\nAm J Geriatr Pharmacother 2011; 10:69–80.\n19. Brecher DB, West TL. Underrecognition and\nUndertreatment of Pain and Behavioral Symptoms in\nEnd-Stage Dementia. Am J Hosp Palliat Med 2016; 33:\n276–280.\n20. National Institute for Health and Care Excellence.\n--------------------------------------------------\n\n",
+      "retrieval_metadata": "{\"corpus_name\": \"medical_cases\", \"top_k\": 5, \"timestamp\": \"2025-08-03T14:50:11.791644\"}"
+    },
+    "reasoner_output": {
+      "medical_analysis": "## 症状分析\n- 主要症状特征和临床意义：患者主要表现为体重下降、皮肤黄疸和上腹部胀痛，这些症状可能指示患者存在肝脏疾病或胆道系统疾病。同时，ALT和胆红素升高也是肝脏或胆道疾病的重要生化指标。\n- 伴随症状的重要性：体重下降可能是慢性疾病的表现，需要进一步关注患者的营养状况和食欲；皮肤黄疸可能是胆红素代谢异常或胆汁排泄障碍的表现，需要关注患者的肝功能和胆道通畅情况。\n- 症状发展模式：根据描述，患者的症状为近期出现，可能是急性或亚急性过程，需要进一步了解症状的起病时间、发展过程和变化情况。\n\n## 可能病因\n- 最可能的3-5个诊断方向：肝硬化、肝癌、胆囊炎、胆石症、胆管癌\n- 每个诊断的支持证据：体重下降、皮肤黄疸、上腹部胀痛以及ALT和胆红素升高都是上述疾病的常见临床表现。\n- 病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。\n\n## 鉴别诊断\n- 需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等\n- 鉴别要点和关键特征：需要通过血液检查、影像学检查和特殊检查来鉴别不同疾病的特征。\n\n## 检查建议\n- 必要的实验室检查：肝功能检查、血常规、肿瘤标志物、凝血功能等\n- 影像学检查建议：肝胆超声、CT或MRI等\n- 特殊检查项目：如有必要，可以进行肝脏或胆道的内镜检查或活组织检查。\n\n## 风险评估\n- 病情严重程度：根据目前的症状和体征，患者的病情可能较为严重，需要及时进行进一步检查和治疗。\n- 可能的并发症：如果是肝脏或胆道疾病，可能会有出血、感染、肝功能衰竭、肝性脑病等并发症。\n- 紧急程度评估：考虑到患者的年龄和症状，应尽快进行进一步检查和治疗，以明确诊断和制定治疗方案。\n\n以上分析基于患者的症状和相关医学知识进行，具体诊断和治疗还需要根据患者的实际情况和医生的专业判断。",
+      "primary_diagnoses": "- 病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。\n- 需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等",
+      "recommended_tests": "- 可能的并发症：如果是肝脏或胆道疾病，可能会有出血、感染、肝功能衰竭、肝性脑病等并发症。"
+    },
+    "tools_output": {
+      "tool_consultation": "## 药物指导\n- 相关治疗药物选择：药物选择应根据具体疾病诊断进行。例如，如果诊断为肝炎，可能需要抗病毒药物，如恩替卡韦或替诺福韦等；如果是胆囊炎或胆石症，可能需要抗生素以及胆固醇溶解药物。\n- 用药注意事项：所有药物都应在医生指导下使用，避免自我用药。同时，需要注意药物的副作用，如肝肾功能损害、消化道反应等。\n- 可能的药物相互作用：某些药物可能与其他药物产生相互作用，影响药效或增加副作用，如抗病毒药物与某些抗生素、抗真菌药物等。\n\n## 诊断标准\n- 相关疾病的诊断标准：诊断标准通常包括临床症状、体征、实验室检查和影像学检查等。例如，肝硬化的诊断需要结合临床、实验室和影像学证据。\n- 临床指南参考：可以参考相关的临床指南，如《肝硬化诊断和治疗指南》、《胆石症诊断和治疗指南》等。\n- 最新研究进展：可以关注相关疾病的最新研究进展，以获取最新的诊断和治疗信息。\n\n## 治疗建议\n- 标准治疗方案：治疗方案应根据具体疾病诊断和病情严重程度制定。例如，肝硬化可能需要抗病毒治疗、营养支持治疗和并发症的治疗；胆石症可能需要药物治疗或手术治疗。\n- 个体化治疗考虑：治疗方案应考虑患者的个体差异，如年龄、性别、基础疾病、并发症、药物耐受性等。\n- 预后评估：预后评估应根据疾病类型、病情严重程度、治疗反应和并发症等因素进行。\n\n## 预防措施\n- 疾病预防要点：预防措施包括健康饮食、适当运动、避免饮酒和吸烟、定期体检等。\n- 生活方式建议：建议保持健康的生活方式，如均衡饮食、适当运动、充足睡眠、保持良好的心理状态等。\n- 随访计划：根据疾病类型和病情严重程度，制定合适的随访计划，如定期进行肝功能检查、影像学检查等。\n\n以上建议基于循证医学的原则，具体的诊断和治疗方案还需要根据患者的实际情况和医生的专业判断。",
+      "additional_guidance": "## 药物指导\n- 相关治疗药物选择：药物选择应根据具体疾病诊断进行。例如，如果诊断为肝炎，可能需要抗病毒药物，如恩替卡韦或替诺福韦等；如果是胆囊炎或胆石症，可能需要抗生素以及胆固醇溶解药物。\n- 用药注意事项：所有药物都应在医生指导下使用，避免自我用药。同时，需要注意药物的副作用，如肝肾功能损害、消化道反应等。\n- 可能的药物相互作用：某些药物可能与其他药物产生相互作用，影响药效或增加副作用，如抗病毒药物与某些抗生素、抗真菌药物等。\n\n## 诊断标准\n- 相关疾病的诊断标准：诊断标准通常包括临床症状、体征、实验室检查和影像学检查等。例如，肝硬化的诊断需要结合临床、实验室和影像学证据。\n- 临床指南参考：可以参考相关的临床指南，如《肝硬化诊断和治疗指南》、《胆石症诊断和治疗指南》等。\n- 最新研究进展：可以关注相关疾病的最新研究进展，以获取最新的诊断和治疗信息。\n\n## 治疗建议\n- 标准治疗方案：治疗方案应根据具体疾病诊断和病情严重程度制定。例如，肝硬化可能需要抗病毒治疗、营养支持治疗和并发症的治疗；胆石症可能需要药物治疗或手术治疗。\n- 个体化治疗考虑：治疗方案应考虑患者的个体差异...",
+      "tooluniverse_results": {
+        "status": "success",
+        "comprehensive_results": {
+          "drug_information": {},
+          "disease_information": {
+            "病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。": {
+              "status": "mock",
+              "tool": "mock_disease_search",
+              "query": "病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。",
+              "results": {
+                "message": "模拟搜索疾病 '病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。' 的信息",
+                "recommendations": [
+                  "请参考权威医学指南",
+                  "建议进行相关检查确诊",
+                  "及时就医获取专业诊疗"
+                ]
+              }
+            },
+            "需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等": {
+              "status": "mock",
+              "tool": "mock_disease_search",
+              "query": "需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等",
+              "results": {
+                "message": "模拟搜索疾病 '需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等' 的信息",
+                "recommendations": [
+                  "请参考权威医学指南",
+                  "建议进行相关检查确诊",
+                  "及时就医获取专业诊疗"
+                ]
+              }
+            }
+          },
+          "treatment_guidelines": {
+            "病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。": {
+              "status": "mock",
+              "tool": "mock_treatment_guidelines",
+              "query": "病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。",
+              "results": {
+                "message": "模拟搜索 '病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。' 的治疗指南",
+                "recommendations": [
+                  "请参考最新的临床诊疗指南",
+                  "结合患者具体情况制定治疗方案",
+                  "定期评估治疗效果并调整方案"
+                ]
+              }
+            },
+            "需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等": {
+              "status": "mock",
+              "tool": "mock_treatment_guidelines",
+              "query": "需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等",
+              "results": {
+                "message": "模拟搜索 '需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等' 的治疗指南",
+                "recommendations": [
+                  "请参考最新的临床诊疗指南",
+                  "结合患者具体情况制定治疗方案",
+                  "定期评估治疗效果并调整方案"
+                ]
+              }
+            }
+          },
+          "search_summary": "成功检索了2个疾病的相关信息, 获取了2个疾病的治疗指南。"
+        },
+        "tools_used": [
+          "mock_tools"
+        ]
+      },
+      "real_medical_tools": {
+        "tooluniverse_available": true,
+        "tool_engine_initialized": false,
+        "medical_tools_count": 0,
+        "medical_tools": []
+      }
+    },
+    "report_output": {
+      "comprehensive_report": "# 医学综合分析报告\n\n## 执行摘要\n本报告基于一名58岁男性患者的症状进行了全面的医学分析。患者近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高。通过对症状的分析，结合相关医学知识和类似病例，我们提出了可能的诊断方向，并给出了进一步的检查建议和治疗指导。\n\n## 1. 病例基本信息\n患者为一名58岁男性，近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高。\n\n## 2. 相似病例参考\n经过检索，我们找到了几个与患者症状相似的病例，但这些病例主要涉及的是神经病学领域，与患者的主要症状（肝胆系统疾病）关联性不大，因此参考价值有限。\n\n## 3. 临床分析\n### 3.1 症状分析\n患者主要表现为体重下降、皮肤黄疸和上腹部胀痛，这些症状可能指示患者存在肝脏疾病或胆道系统疾病。同时，ALT和胆红素升高也是肝脏或胆道疾病的重要生化指标。\n\n### 3.2 可能诊断\n最可能的诊断方向包括肝硬化、肝癌、胆囊炎、胆石症、胆管癌。\n\n### 3.3 鉴别诊断\n需要排除的疾病包括肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等。\n\n## 4. 检查建议\n### 4.1 必需检查\n建议进行肝功能检查、血常规、肿瘤标志物、凝血功能等实验室检查。\n\n### 4.2 选择性检查\n影像学检查如肝胆超声、CT或MRI等也是必要的。如有必要，可以进行肝脏或胆道的内镜检查或活组织检查。\n\n## 5. 治疗指导\n### 5.1 药物治疗\n药物选择应根据具体疾病诊断进行。例如，如果诊断为肝炎，可能需要抗病毒药物，如恩替卡韦或替诺福韦等；如果是胆囊炎或胆石症，可能需要抗生素以及胆固醇溶解药物。\n\n### 5.2 非药物治疗\n非药物治疗包括健康生活方式的调整，如均衡饮食、适当运动、充足睡眠、保持良好的心理状态等。\n\n### 5.3 生活指导\n建议保持健康的生活方式，如均衡饮食、适当运动、充足睡眠、保持良好的心理状态等。\n\n## 6. 风险管理\n### 6.1 并发症预防\n如果是肝脏或胆道疾病，可能会有出血、感染、肝功能衰竭、肝性脑病等并发症。\n\n### 6.2 随访计划\n根据疾病类型和病情严重程度，制定合适的随访计划，如定期进行肝功能检查、影像学检查等。\n\n## 7. 专业建议\n### 7.1 临床决策支持\n以上分析基于患者的症状和相关医学知识进行，具体诊断和治疗还需要根据患者的实际情况和医生的专业判断。\n\n### 7.2 进一步咨询建议\n建议患者尽快就医，进行进一步的检查和治疗。\n\n## 免责声明\n本报告基于AI辅助分析，仅供医疗专业人员参考。最终诊断需要医师结合完整临床信息做出。",
+      "executive_summary": "本报告基于一名58岁男性患者的症状进行了全面的医学分析。患者近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高。通过对症状的分析，结合相关医学知识和类似病例，我们提出了可能的诊断方向，并给出了进一步的检查建议和治疗指导。"
+    },
+    "comprehensive_report": "# 医学综合分析报告\n\n## 执行摘要\n本报告基于一名58岁男性患者的症状进行了全面的医学分析。患者近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高。通过对症状的分析，结合相关医学知识和类似病例，我们提出了可能的诊断方向，并给出了进一步的检查建议和治疗指导。\n\n## 1. 病例基本信息\n患者为一名58岁男性，近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高。\n\n## 2. 相似病例参考\n经过检索，我们找到了几个与患者症状相似的病例，但这些病例主要涉及的是神经病学领域，与患者的主要症状（肝胆系统疾病）关联性不大，因此参考价值有限。\n\n## 3. 临床分析\n### 3.1 症状分析\n患者主要表现为体重下降、皮肤黄疸和上腹部胀痛，这些症状可能指示患者存在肝脏疾病或胆道系统疾病。同时，ALT和胆红素升高也是肝脏或胆道疾病的重要生化指标。\n\n### 3.2 可能诊断\n最可能的诊断方向包括肝硬化、肝癌、胆囊炎、胆石症、胆管癌。\n\n### 3.3 鉴别诊断\n需要排除的疾病包括肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等。\n\n## 4. 检查建议\n### 4.1 必需检查\n建议进行肝功能检查、血常规、肿瘤标志物、凝血功能等实验室检查。\n\n### 4.2 选择性检查\n影像学检查如肝胆超声、CT或MRI等也是必要的。如有必要，可以进行肝脏或胆道的内镜检查或活组织检查。\n\n## 5. 治疗指导\n### 5.1 药物治疗\n药物选择应根据具体疾病诊断进行。例如，如果诊断为肝炎，可能需要抗病毒药物，如恩替卡韦或替诺福韦等；如果是胆囊炎或胆石症，可能需要抗生素以及胆固醇溶解药物。\n\n### 5.2 非药物治疗\n非药物治疗包括健康生活方式的调整，如均衡饮食、适当运动、充足睡眠、保持良好的心理状态等。\n\n### 5.3 生活指导\n建议保持健康的生活方式，如均衡饮食、适当运动、充足睡眠、保持良好的心理状态等。\n\n## 6. 风险管理\n### 6.1 并发症预防\n如果是肝脏或胆道疾病，可能会有出血、感染、肝功能衰竭、肝性脑病等并发症。\n\n### 6.2 随访计划\n根据疾病类型和病情严重程度，制定合适的随访计划，如定期进行肝功能检查、影像学检查等。\n\n## 7. 专业建议\n### 7.1 临床决策支持\n以上分析基于患者的症状和相关医学知识进行，具体诊断和治疗还需要根据患者的实际情况和医生的专业判断。\n\n### 7.2 进一步咨询建议\n建议患者尽快就医，进行进一步的检查和治疗。\n\n## 免责声明\n本报告基于AI辅助分析，仅供医疗专业人员参考。最终诊断需要医师结合完整临床信息做出。",
+    "executive_summary": "本报告基于一名58岁男性患者的症状进行了全面的医学分析。患者近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高。通过对症状的分析，结合相关医学知识和类似病例，我们提出了可能的诊断方向，并给出了进一步的检查建议和治疗指导。"
+  }
+}

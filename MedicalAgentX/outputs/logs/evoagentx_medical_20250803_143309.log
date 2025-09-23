@@ -1,0 +1,67 @@
+2025-08-03 14:33:10,203 - evoagentx_medical_engine - INFO - 医疗RAG引擎初始化完成
+2025-08-03 14:33:10,203 - tooluniverse_integration - WARNING - ToolUniverse不可用，将使用模拟工具
+2025-08-03 14:33:10,203 - evoagentx_medical_workflow - INFO - 工作流图已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\medical_workflow_graph.json
+2025-08-03 14:33:12,926 - evoagentx_medical_workflow - INFO - EvoAgentX工作流设置完成
+2025-08-03 14:33:12,936 - evoagentx_medical_workflow - INFO - 医疗工作流执行器初始化完成
+2025-08-03 14:33:12,936 - evoagentx_medical_workflow - INFO - 正在建立医学文档索引...
+2025-08-03 14:33:12,936 - evoagentx_medical_engine - INFO - 开始索引 2 个医学PDF文档...
+2025-08-03 14:33:12,936 - evoagentx_medical_engine - INFO - 处理文档: ene.14412.pdf
+2025-08-03 14:33:13,289 - evoagentx_medical_engine - INFO - 处理文档: Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf
+2025-08-03 14:33:22,118 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:23,457 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:24,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:25,793 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:26,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:28,364 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:29,836 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:31,021 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:32,043 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:33,291 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:34,401 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:35,459 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:36,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:37,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:38,841 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:40,204 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:41,063 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:42,265 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:43,391 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:44,433 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:45,667 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:46,781 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:47,632 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:48,110 - evoagentx_medical_engine - INFO - 成功索引 227 个文档块
+2025-08-03 14:33:48,110 - evoagentx_medical_workflow - INFO - 医学文档索引建立完成
+2025-08-03 14:33:55,445 - evoagentx_medical_workflow - INFO - 开始执行医疗分析: 患者男性，58岁，近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高
+2025-08-03 14:33:55,445 - evoagentx_medical_workflow - INFO - 执行医学文档检索...
+2025-08-03 14:33:56,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:33:56,114 - evoagentx.rag.postprocessors.base - INFO - Reranked to 5 chunks
+2025-08-03 14:33:56,114 - evoagentx_medical_workflow - INFO - 执行EvoAgentX医疗分析工作流...
+2025-08-03 14:33:56,115 - evoagentx_medical_workflow - INFO - 步骤1: 医学文档检索 - 已完成
+2025-08-03 14:33:56,115 - evoagentx_medical_workflow - INFO - 步骤2: 执行医学推理分析
+2025-08-03 14:33:56,115 - evoagentx_medical_workflow - INFO - 步骤3: 执行医学工具咨询
+2025-08-03 14:33:56,115 - evoagentx_medical_workflow - ERROR - 执行工作流步骤时发生错误: 'reasoner_output'
+2025-08-03 14:33:56,116 - evoagentx_medical_workflow - INFO - 工作流结果已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\results\evoagentx_medical_analysis_20250803_143356.json
+2025-08-03 14:33:56,116 - evoagentx_medical_workflow - INFO - 医疗分析工作流执行完成
+2025-08-03 14:34:03,520 - evoagentx_medical_workflow - INFO - 开始执行医疗分析: 女性患者，35岁，反复头痛伴恶心呕吐，视物模糊，血压180/110mmHg
+2025-08-03 14:34:03,521 - evoagentx_medical_workflow - INFO - 执行医学文档检索...
+2025-08-03 14:34:04,266 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:34:04,273 - evoagentx.rag.postprocessors.base - INFO - Reranked to 5 chunks
+2025-08-03 14:34:04,274 - evoagentx_medical_workflow - INFO - 执行EvoAgentX医疗分析工作流...
+2025-08-03 14:34:04,274 - evoagentx_medical_workflow - INFO - 步骤1: 医学文档检索 - 已完成
+2025-08-03 14:34:04,274 - evoagentx_medical_workflow - INFO - 步骤2: 执行医学推理分析
+2025-08-03 14:34:04,275 - evoagentx_medical_workflow - INFO - 步骤3: 执行医学工具咨询
+2025-08-03 14:34:04,275 - evoagentx_medical_workflow - ERROR - 执行工作流步骤时发生错误: 'reasoner_output'
+2025-08-03 14:34:04,355 - evoagentx_medical_workflow - INFO - 工作流结果已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\results\evoagentx_medical_analysis_20250803_143404.json
+2025-08-03 14:34:04,355 - evoagentx_medical_workflow - INFO - 医疗分析工作流执行完成
+2025-08-03 14:34:08,876 - evoagentx_medical_workflow - INFO - 开始执行医疗分析: 患者主诉胸痛，呼吸困难，心电图显示ST段抬高，肌钙蛋白升高
+2025-08-03 14:34:08,877 - evoagentx_medical_workflow - INFO - 执行医学文档检索...
+2025-08-03 14:34:09,298 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:34:09,303 - evoagentx.rag.postprocessors.base - INFO - Reranked to 5 chunks
+2025-08-03 14:34:09,303 - evoagentx_medical_workflow - INFO - 执行EvoAgentX医疗分析工作流...
+2025-08-03 14:34:09,303 - evoagentx_medical_workflow - INFO - 步骤1: 医学文档检索 - 已完成
+2025-08-03 14:34:09,303 - evoagentx_medical_workflow - INFO - 步骤2: 执行医学推理分析
+2025-08-03 14:34:09,305 - evoagentx_medical_workflow - INFO - 步骤3: 执行医学工具咨询
+2025-08-03 14:34:09,305 - evoagentx_medical_workflow - ERROR - 执行工作流步骤时发生错误: 'reasoner_output'
+2025-08-03 14:34:09,306 - evoagentx_medical_workflow - INFO - 工作流结果已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\results\evoagentx_medical_analysis_20250803_143409.json
+2025-08-03 14:34:09,306 - evoagentx_medical_workflow - INFO - 医疗分析工作流执行完成

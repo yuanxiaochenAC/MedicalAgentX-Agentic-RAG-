@@ -1,0 +1,246 @@
+name: MedicalCaseAnalysisWithTools
+description: 医疗智能Agentic RAG工作流 - 完整的病例分析流程
+
+version: "1.0"
+author: "Medical AI Team"
+created_date: "2024-01-01"
+
+# 工作流输入参数
+inputs:
+  - name: symptom_text
+    type: string
+    description: 患者症状描述
+    required: true
+    validation:
+      min_length: 10
+      max_length: 5000
+  
+  - name: patient_info
+    type: object
+    description: 患者基本信息
+    required: false
+    default: {}
+    schema:
+      age: integer
+      gender: string
+      medical_history: array
+      current_medications: array
+
+  - name: analysis_depth
+    type: string
+    description: 分析深度级别
+    required: false
+    default: "standard"
+    options: ["basic", "standard", "comprehensive"]
+
+# 工作流步骤定义
+steps:
+  # 第一阶段：病例检索
+  - id: "retrieval_stage"
+    name: "相似病例检索"
+    agent: "RetrieverAgent"
+    description: "使用FAISS向量数据库检索相似医学病例"
+    
+    inputs:
+      query: "{{ symptom_text }}"
+      top_k: "{{ 3 if analysis_depth == 'basic' else (5 if analysis_depth == 'standard' else 8) }}"
+      filters: "{{ patient_info }}"
+    
+    outputs:
+      retrieval_results: "similar_cases"
+    
+    error_handling:
+      strategy: "continue_with_warning"
+      fallback_data: 
+        similar_cases: []
+        total_results: 0
+    
+    timeout: 30
+
+  # 第二阶段：医学推理分析
+  - id: "reasoning_stage"
+    name: "AI医学推理分析"
+    agent: "ReasoningAgent"
+    description: "基于检索病例进行病因分析和诊断推理"
+    
+    depends_on: ["retrieval_stage"]
+    
+    inputs:
+      symptom_text: "{{ symptom_text }}"
+      retrieval_results: "{{ steps.retrieval_stage.outputs.retrieval_results }}"
+      patient_info: "{{ patient_info }}"
+    
+    outputs:
+      reasoning_results: "medical_analysis"
+    
+    error_handling:
+      strategy: "retry_then_fail"
+      max_retries: 2
+    
+    timeout: 60
+
+  # 第三阶段：医学工具查询（条件执行）
+  - id: "tools_stage"
+    name: "医学工具增强查询"
+    agent: "ToolUniverseAgent"
+    description: "使用ToolUniverse获取结构化医学知识"
+    
+    depends_on: ["reasoning_stage"]
+    condition: "{{ analysis_depth != 'basic' }}"
+    
+    inputs:
+      diagnosis_analysis: "{{ steps.reasoning_stage.outputs.reasoning_results.medical_analysis }}"
+      query_type: "comprehensive"
+      disease_keywords: "{{ steps.reasoning_stage.outputs.reasoning_results.primary_diagnoses }}"
+      symptom_keywords: "{{ symptom_text.split() }}"
+      medical_specialty: "{{ steps.reasoning_stage.outputs.reasoning_results.specialty if steps.reasoning_stage.outputs.reasoning_results.specialty else '内科' }}"
+    
+    outputs:
+      tool_results: "tool_query_results"
+    
+    error_handling:
+      strategy: "continue_with_default"
+      fallback_data:
+        drug_information: "工具查询不可用"
+        diagnostic_guidelines: "请参考相关临床指南"
+        treatment_recommendations: "请咨询专科医师"
+    
+    timeout: 45
+
+  # 第四阶段：综合分析报告
+  - id: "integration_stage"
+    name: "综合分析报告生成"
+    agent: "IntegrationAgent"
+    description: "整合所有分析结果生成最终报告"
+    
+    depends_on: ["reasoning_stage"]
+    
+    inputs:
+      symptom_text: "{{ symptom_text }}"
+      retrieval_results: "{{ steps.retrieval_stage.outputs.retrieval_results }}"
+      reasoning_results: "{{ steps.reasoning_stage.outputs.reasoning_results }}"
+      tool_results: "{{ steps.tools_stage.outputs.tool_results if steps.tools_stage.executed else {} }}"
+      current_timestamp: "{{ current_time() }}"
+    
+    outputs:
+      final_report: "comprehensive_report"
+      key_findings: "key_findings"
+      urgent_alerts: "urgent_alerts"
+      follow_up_plan: "follow_up_plan"
+    
+    error_handling:
+      strategy: "must_succeed"
+      fallback_agent: "SimpleReportAgent"
+    
+    timeout: 90
+
+# 工作流输出
+outputs:
+  - name: medical_analysis_report
+    source: "steps.integration_stage.outputs.final_report"
+    description: "完整的医学分析报告"
+  
+  - name: diagnosis_summary
+    source: "steps.reasoning_stage.outputs.reasoning_results.primary_diagnoses"
+    description: "主要诊断方向"
+  
+  - name: recommended_actions
+    source: "steps.integration_stage.outputs.key_findings"
+    description: "推荐的后续行动"
+  
+  - name: urgency_level
+    source: "steps.reasoning_stage.outputs.reasoning_results.urgency"
+    description: "紧急程度评估"
+  
+  - name: workflow_metadata
+    value:
+      execution_time: "{{ execution_duration }}"
+      stages_completed: "{{ completed_stages }}"
+      analysis_depth: "{{ analysis_depth }}"
+      similar_cases_found: "{{ steps.retrieval_stage.outputs.retrieval_results.total_results }}"
+
+# 工作流配置
+configuration:
+  # 执行模式
+  execution_mode: "sequential"  # sequential | parallel | hybrid
+  
+  # 错误处理策略
+  global_error_handling:
+    strategy: "graceful_degradation"
+    log_errors: true
+    notify_on_failure: true
+  
+  # 性能配置
+  performance:
+    max_total_time: 300  # 5分钟最大执行时间
+    parallel_limit: 3    # 最大并行任务数
+    memory_limit: "2GB"
+  
+  # 质量控制
+  quality_assurance:
+    enable_validation: true
+    medical_accuracy_check: true
+    output_completeness_check: true
+  
+  # 日志配置
+  logging:
+    level: "INFO"
+    include_timestamps: true
+    log_patient_data: false  # 隐私保护
+    log_intermediate_results: true
+
+# 条件流程控制
+conditions:
+  # 紧急情况处理
+  emergency_flow:
+    condition: "{{ steps.reasoning_stage.outputs.reasoning_results.urgency == 'emergency' }}"
+    actions:
+      - send_alert: "medical_emergency_detected"
+      - priority_boost: true
+      - notify_physician: true
+  
+  # 低质量结果处理
+  quality_check:
+    condition: "{{ steps.retrieval_stage.outputs.retrieval_results.total_results < 2 }}"
+    actions:
+      - add_disclaimer: "limited_case_data"
+      - suggest_consultation: true
+
+# 工作流验证规则
+validation:
+  pre_execution:
+    - check_input_completeness
+    - validate_symptom_format
+    - verify_agent_availability
+  
+  post_execution:
+    - validate_output_structure
+    - check_medical_terminology
+    - verify_report_completeness
+
+# 元数据
+metadata:
+  medical_specialties:
+    - "内科"
+    - "外科"
+    - "神经科"
+    - "心血管科"
+    - "消化科"
+    - "呼吸科"
+    - "内分泌科"
+    - "血液科"
+    - "肿瘤科"
+    - "风湿免疫科"
+  
+  supported_languages:
+    - "zh-CN"
+    - "en-US"
+  
+  evidence_level: "AI辅助分析"
+  intended_use: "医疗专业人员决策支持"
+  
+  disclaimers:
+    - "本分析仅供医疗专业人员参考"
+    - "不能替代正式的医疗诊断"
+    - "最终诊断需要结合完整临床信息"
+    - "如有紧急情况请立即就医"

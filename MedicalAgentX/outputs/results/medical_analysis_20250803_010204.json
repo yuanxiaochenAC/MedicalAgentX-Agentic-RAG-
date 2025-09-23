@@ -1,0 +1,112 @@
+{
+  "input": "患者主诉胸痛，呼吸困难，心电图显示ST段抬高，肌钙蛋白升高",
+  "timestamp": "2025-08-03T01:01:10.705350",
+  "stages": {
+    "retrieval": {
+      "status": "success",
+      "results": [
+        {
+          "rank": 1,
+          "content": "Treatment goals and choice of treatments should take into consid -\neration an individual's pattern of symptoms, preferences and exist -\ning comorbidities.\n 14681331, 2021, 9, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/ene.14888 by CochraneChina, Wiley Online Library on [02/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+          "source": "Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+          "similarity_score": 0.5143344402313232,
+          "metadata": {
+            "source": "Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+            "chunk_id": 25,
+            "file_path": "D:\\test\\EAX_Medical_Agent_1\\MedicalAgentX\\data\\medical_cases\\Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+            "doc_type": "medical_case_report",
+            "corpus_id": "medical_case_reports"
+          }
+        },
+        {
+          "rank": 2,
+          "content": "disordered breathing, rapid eye movement sleep behaviour disorder \n(RBD), restless legs syndrome and periodic limb movements (RLS/\nPLMS). Where appropriate, evaluations for adults and children are \ndescribed separately. For some clinical situations, expert statements \nare included. Patients’ view on the management of narcolepsy is also \nincluded in a special section.\nMETHODS\nThe EAN, the ESRS and the EU-  NN nominated 18 experts in nar -\ncolepsy from 11 European countries to form a task force. Four pa -\ntient representatives were elected by a patient assembly during the \nEuropean Narcolepsy Day 2018 and were subsequently added to \nthe task force to provide an opinion statement around key areas of \nclinical management and research outcomes. Within the task force, \n10 working sub-  groups were appointed, each consisting of two ex -\nperts responsible for one clinical question.\nThis guideline was developed in accordance with the recom -",
+          "source": "Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+          "similarity_score": 0.5165161490440369,
+          "metadata": {
+            "source": "Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+            "chunk_id": 13,
+            "file_path": "D:\\test\\EAX_Medical_Agent_1\\MedicalAgentX\\data\\medical_cases\\Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+            "doc_type": "medical_case_report",
+            "corpus_id": "medical_case_reports"
+          }
+        },
+        {
+          "rank": 3,
+          "content": "FIGURE 2  Overview of recommendations and of quality of evidence (children) (SP, sleep paralysis; HH, hypnagogic/hypnopompic \nhallucinations)\n 14681331, 2021, 9, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/ene.14888 by CochraneChina, Wiley Online Library on [02/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+          "source": "Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+          "similarity_score": 0.5206489562988281,
+          "metadata": {
+            "source": "Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+            "chunk_id": 42,
+            "file_path": "D:\\test\\EAX_Medical_Agent_1\\MedicalAgentX\\data\\medical_cases\\Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf",
+            "doc_type": "medical_case_report",
+            "corpus_id": "medical_case_reports"
+          }
+        },
+        {
+          "rank": 4,
+          "content": "pain, pulmonary or cardiac disease, environmental fac-\ntors such as changes in living conditions, and other stres-sors should be identiﬁed and treated adequately by non-pharmacological approaches. We believe that a principleof watchful waiting should be adopted before initiatingtreatment with antipsychotics. Anti-dementia medication(cholinesterase inhibitors and memantine) should beinstituted as indicated. Communication and interaction\nwith professional and family caregivers should be opti-\nmized. It is the opinion of the authors that antipsychotictreatment may be necessary in patients with severe agita-tion and/or aggression causing harm to themselves or toother people. Shared decision-making must be empha-sized, and the patient as well as a legal guardian ininstances where one has been appointed must beinformed about the individual risk –beneﬁt ratio. In\ninstances where treatment with antipsychotics is initi-",
+          "source": "ene.14412.pdf",
+          "similarity_score": 0.5249171257019043,
+          "metadata": {
+            "source": "ene.14412.pdf",
+            "chunk_id": 57,
+            "file_path": "D:\\test\\EAX_Medical_Agent_1\\MedicalAgentX\\data\\medical_cases\\ene.14412.pdf",
+            "doc_type": "medical_case_report",
+            "corpus_id": "medical_case_reports"
+          }
+        },
+        {
+          "rank": 5,
+          "content": "dementiaWe believe that patients with dementia should begiven the same attention and care as people without\ndementia regarding the management of epilepsy. It is\nimportant to regularly inquire about potential seizuremarkers with patients and their caregivers. Potentialharms and beneﬁts have to be considered when intro-ducing a new AED and rapid follow-up ensured. It isthe opinion of the authors that the choice of AED ina patient with dementia should be individualized. Dueconsideration should be given to the individual\npatient’s concomitant pharmacological treatment and\ncomorbidities, adverse eﬀect proﬁle of AEDs, eﬀectson bone health and osteoporosis [97], and the avail-ability of diﬀerent drug formulations, dosing sched-ules, and risk of non-compliance. Monotherapy isrecommended, and AEDs are better tolerated whenstarted at low dose with gradual uptitration to as lowa dose as possible to achieve seizure freedom. The aim\nis to minimize dose-dependent side eﬀects (e.g. wors-",
+          "source": "ene.14412.pdf",
+          "similarity_score": 0.5262097120285034,
+          "metadata": {
+            "source": "ene.14412.pdf",
+            "chunk_id": 64,
+            "file_path": "D:\\test\\EAX_Medical_Agent_1\\MedicalAgentX\\data\\medical_cases\\ene.14412.pdf",
+            "doc_type": "medical_case_report",
+            "corpus_id": "medical_case_reports"
+          }
+        }
+      ],
+      "query": "患者主诉胸痛，呼吸困难，心电图显示ST段抬高，肌钙蛋白升高",
+      "total_results": 5
+    },
+    "reasoning": {
+      "status": "success",
+      "analysis": "1. 可能的病因分析：\n   患者的症状包括胸痛、呼吸困难，心电图显示ST段抬高，肌钙蛋白升高。这些症状和指标可能表示心肌缺血或心肌梗死。ST段抬高是心肌梗死的典型表现，而肌钙蛋白是心肌损伤的敏感指标。胸痛和呼吸困难也是心肌梗死的常见症状。\n\n2. 初步诊断方向：\n   根据患者的症状和体征，初步诊断方向为急性心肌梗死。\n\n3. 建议的检查项目：\n   需要进一步做血液生化检查，包括心肌酶谱、肌红蛋白、D-二聚体等。同时，应进行心脏彩超检查，了解心脏结构和功能情况。如果条件允许，应进行冠状动脉造影，了解冠状动脉狭窄或阻塞的情况。\n\n4. 需要关注的并发症或风险因素：\n   心肌梗死的并发症包括心力衰竭、心律失常、心包填塞、心肌破裂等，需要密切监测患者的心电图和生命体征。此外，高血压、糖尿病、高血脂、吸烟、饮酒等都是心肌梗死的风险因素，需要了解患者的这些情况。\n\n5. 治疗建议（仅供参考）：\n   治疗急性心肌梗死，首先需要进行急救，包括镇痛、氧疗、抗栓治疗等。对于适合的患者，应尽快进行冠状动脉介入治疗，以恢复冠状动脉的血流。同时，应进行药物治疗，包括抗血小板药物、抗凝药物、降脂药物、控制血压和心率的药物等。此外，需要进行心脏康复，改善生活习惯，控制风险因素。\n\n注意：本分析仅供医疗专业人员参考，不能替代临床诊断。",
+      "used_cases": 5,
+      "reasoning_model": "gpt-4"
+    },
+    "tools": {
+      "status": "success",
+      "tool_results": {
+        "drug_interactions": "暂无发现药物相互作用风险",
+        "lab_reference_values": "建议检查：血常规、肝功能、肾功能",
+        "differential_diagnosis": "需排除其他可能疾病",
+        "treatment_guidelines": "遵循相关临床指南"
+      },
+      "tools_used": [
+        "drug_interactions",
+        "lab_reference_values",
+        "differential_diagnosis",
+        "treatment_guidelines"
+      ]
+    },
+    "integration": {
+      "status": "success",
+      "final_report": "# 医学分析报告\n\n## 1. 症状总结\n患者主诉胸痛，呼吸困难，心电图显示ST段抬高，肌钙蛋白升高。\n\n## 2. 可能病因\n患者的症状和体征可能表示心肌缺血或心肌梗死。ST段抬高是心肌梗死的典型表现，而肌钙蛋白是心肌损伤的敏感指标。胸痛和呼吸困难也是心肌梗死的常见症状。\n\n## 3. 诊断建议\n根据患者的症状和体征，初步诊断方向为急性心肌梗死。需排除其他可能疾病。\n\n## 4. 检查建议\n需要进一步做血液生化检查，包括心肌酶谱、肌红蛋白、D-二聚体等。同时，应进行心脏彩超检查，了解心脏结构和功能情况。如果条件允许，应进行冠状动脉造影，了解冠状动脉狭窄或阻塞的情况。建议检查：血常规、肝功能、肾功能。\n\n## 5. 治疗方向\n治疗急性心肌梗死，首先需要进行急救，包括镇痛、氧疗、抗栓治疗等。对于适合的患者，应尽快进行冠状动脉介入治疗，以恢复冠状动脉的血流。同时，应进行药物治疗，包括抗血小板药物、抗凝药物、降脂药物、控制血压和心率的药物等。此外，需要进行心脏康复，改善生活习惯，控制风险因素。治疗应遵循相关临床指南。\n\n## 6. 注意事项\n心肌梗死的并发症包括心力衰竭、心律失常、心包填塞、心肌破裂等，需要密切监测患者的心电图和生命体征。此外，高血压、糖尿病、高血脂、吸烟、饮酒等都是心肌梗死的风险因素，需要了解患者的这些情况。暂无发现药物相互作用风险。\n\n## 7. 随访建议\n患者在出院后需要定期进行复查，包括心电图、心肌酶谱、肌红蛋白等指标，以及心脏彩超等检查。同时，需要定期评估心脏功能和病情进展，调整治疗方案。\n\n**重要提醒：此报告仅供医疗专业人员参考，不能替代正式的临床诊断。**\n",
+      "analysis_timestamp": "2025-08-03T01:02:04.867431",
+      "components_used": [
+        "retriever",
+        "reasoning",
+        "tool_universe",
+        "integration"
+      ]
+    }
+  },
+  "status": "success",
+  "final_report": "# 医学分析报告\n\n## 1. 症状总结\n患者主诉胸痛，呼吸困难，心电图显示ST段抬高，肌钙蛋白升高。\n\n## 2. 可能病因\n患者的症状和体征可能表示心肌缺血或心肌梗死。ST段抬高是心肌梗死的典型表现，而肌钙蛋白是心肌损伤的敏感指标。胸痛和呼吸困难也是心肌梗死的常见症状。\n\n## 3. 诊断建议\n根据患者的症状和体征，初步诊断方向为急性心肌梗死。需排除其他可能疾病。\n\n## 4. 检查建议\n需要进一步做血液生化检查，包括心肌酶谱、肌红蛋白、D-二聚体等。同时，应进行心脏彩超检查，了解心脏结构和功能情况。如果条件允许，应进行冠状动脉造影，了解冠状动脉狭窄或阻塞的情况。建议检查：血常规、肝功能、肾功能。\n\n## 5. 治疗方向\n治疗急性心肌梗死，首先需要进行急救，包括镇痛、氧疗、抗栓治疗等。对于适合的患者，应尽快进行冠状动脉介入治疗，以恢复冠状动脉的血流。同时，应进行药物治疗，包括抗血小板药物、抗凝药物、降脂药物、控制血压和心率的药物等。此外，需要进行心脏康复，改善生活习惯，控制风险因素。治疗应遵循相关临床指南。\n\n## 6. 注意事项\n心肌梗死的并发症包括心力衰竭、心律失常、心包填塞、心肌破裂等，需要密切监测患者的心电图和生命体征。此外，高血压、糖尿病、高血脂、吸烟、饮酒等都是心肌梗死的风险因素，需要了解患者的这些情况。暂无发现药物相互作用风险。\n\n## 7. 随访建议\n患者在出院后需要定期进行复查，包括心电图、心肌酶谱、肌红蛋白等指标，以及心脏彩超等检查。同时，需要定期评估心脏功能和病情进展，调整治疗方案。\n\n**重要提醒：此报告仅供医疗专业人员参考，不能替代正式的临床诊断。**\n"
+}

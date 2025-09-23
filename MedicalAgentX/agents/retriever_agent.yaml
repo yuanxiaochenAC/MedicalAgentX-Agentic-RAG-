@@ -1,0 +1,50 @@
+name: RetrieverAgent
+type: tool-caller
+tool: faiss_query_documents
+description: 使用FAISS语义检索查找相似医学病例报告
+
+config:
+  corpus_id: medical_case_reports
+  embedding_model: text-embedding-ada-002
+  top_k: 5
+  similarity_threshold: 0.3
+
+inputs:
+  - name: query
+    type: string
+    description: 患者症状描述或病情查询
+    required: true
+  - name: top_k
+    type: integer
+    description: 返回最相似的文档数量
+    default: 5
+  - name: filters
+    type: object
+    description: 检索过滤条件
+    default: {}
+
+outputs:
+  - name: similar_cases
+    type: array
+    description: 检索到的相似病例列表
+  - name: total_results
+    type: integer
+    description: 检索结果总数
+  - name: query_processed
+    type: string
+    description: 处理后的查询文本
+
+execution:
+  timeout: 30
+  retry_count: 3
+  error_handling: graceful
+
+metadata:
+  version: "1.0"
+  author: "Medical AI Team"
+  medical_specialties:
+    - "内科"
+    - "外科" 
+    - "神经科"
+    - "心血管科"
+    - "消化科"

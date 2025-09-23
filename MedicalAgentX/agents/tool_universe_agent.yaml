@@ -1,0 +1,140 @@
+name: ToolUniverseAgent
+type: tool-caller
+tool: tooluniverse
+description: 调用ToolUniverse医学工具获取结构化医学知识
+
+config:
+  base_url: "tooluniverse_endpoint"
+  timeout: 45
+  max_retries: 3
+  
+tools_available:
+  - name: medical_drugs
+    description: 药物信息查询
+    categories:
+      - "药物相互作用"
+      - "用药指导"
+      - "不良反应"
+      - "禁忌症"
+  
+  - name: medical_symptoms
+    description: 症状知识库
+    categories:
+      - "症状分类"
+      - "病理机制"
+      - "相关疾病"
+  
+  - name: medical_diagnostics
+    description: 诊断标准和指南
+    categories:
+      - "诊断标准"
+      - "临床指南"
+      - "检查方案"
+  
+  - name: medical_procedures
+    description: 医疗程序和操作
+    categories:
+      - "治疗方案"
+      - "手术指征"
+      - "操作规范"
+
+prompt_template: |
+  ## 医学工具查询任务
+  
+  ### 查询背景：
+  基于以下诊断分析结果，需要获取相关的医学专业信息：
+  {{ diagnosis_analysis }}
+  
+  ### 查询目标：
+  {% if query_type == "drug_info" %}
+  查询相关药物信息，包括：
+  - 治疗该病症的常用药物
+  - 药物相互作用
+  - 用药注意事项
+  - 不良反应
+  {% elif query_type == "diagnostic_criteria" %}
+  查询诊断标准，包括：
+  - 疾病诊断标准
+  - 相关临床指南
+  - 推荐检查方案
+  {% elif query_type == "treatment_options" %}
+  查询治疗方案，包括：
+  - 治疗选择
+  - 操作规范
+  - 预后评估
+  {% else %}
+  查询综合医学信息，包括：
+  - 疾病相关知识
+  - 治疗建议
+  - 预防措施
+  {% endif %}
+  
+  ### 查询参数：
+  - 疾病关键词: {{ disease_keywords }}
+  - 症状关键词: {{ symptom_keywords }}
+  - 专科领域: {{ medical_specialty }}
+
+inputs:
+  - name: diagnosis_analysis
+    type: string
+    description: 诊断分析结果
+    required: true
+  - name: query_type
+    type: string
+    description: 查询类型 (drug_info/diagnostic_criteria/treatment_options/comprehensive)
+    default: "comprehensive"
+  - name: disease_keywords
+    type: array
+    description: 疾病关键词列表
+    required: false
+  - name: symptom_keywords
+    type: array
+    description: 症状关键词列表
+    required: false
+  - name: medical_specialty
+    type: string
+    description: 医学专科
+    required: false
+
+outputs:
+  - name: drug_information
+    type: object
+    description: 药物相关信息
+  - name: diagnostic_guidelines
+    type: object
+    description: 诊断指南信息
+  - name: treatment_recommendations
+    type: object
+    description: 治疗建议
+  - name: clinical_references
+    type: array
+    description: 临床参考资料
+  - name: tool_query_summary
+    type: string
+    description: 工具查询结果摘要
+
+execution:
+  timeout: 45
+  retry_count: 3
+  error_handling: graceful
+  parallel_queries: true
+
+quality_assurance:
+  - evidence_based_check
+  - guideline_compliance_check
+  - source_reliability_check
+
+metadata:
+  version: "1.0"
+  medical_evidence_level: "工具增强查询"
+  supported_specialties:
+    - "内科"
+    - "外科"
+    - "神经科"
+    - "心血管科"
+    - "消化科"
+    - "呼吸科"
+    - "内分泌科"
+    - "血液科"
+    - "肿瘤科"
+    - "风湿免疫科"

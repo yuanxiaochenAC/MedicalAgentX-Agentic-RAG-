@@ -1,0 +1,51 @@
+2025-08-03 14:49:31,551 - evoagentx_medical_engine - INFO - 医疗RAG引擎初始化完成
+2025-08-03 14:49:31,579 - tooluniverse_integration - INFO - ToolUniverse工具引擎初始化成功
+2025-08-03 14:49:31,579 - tooluniverse_integration - ERROR - 初始化ToolUniverse时出错: 'ToolUniverse' object has no attribute 'get_all_tools_names'
+2025-08-03 14:49:31,583 - evoagentx_medical_workflow - INFO - 工作流图已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\medical_workflow_graph.json
+2025-08-03 14:49:34,257 - evoagentx_medical_workflow - INFO - EvoAgentX工作流设置完成
+2025-08-03 14:49:34,258 - evoagentx_medical_workflow - INFO - 医疗工作流执行器初始化完成
+2025-08-03 14:49:34,259 - evoagentx_medical_workflow - INFO - 正在建立医学文档索引...
+2025-08-03 14:49:34,260 - evoagentx_medical_engine - INFO - 开始索引 2 个医学PDF文档...
+2025-08-03 14:49:34,260 - evoagentx_medical_engine - INFO - 处理文档: ene.14412.pdf
+2025-08-03 14:49:34,593 - evoagentx_medical_engine - INFO - 处理文档: Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf
+2025-08-03 14:49:43,292 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:44,467 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:45,793 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:46,927 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:48,509 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:49,549 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:50,729 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:51,814 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:53,263 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:55,295 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:56,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:57,587 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:58,786 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:49:59,909 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:01,261 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:02,371 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:03,514 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:04,762 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:06,259 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:07,498 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:08,559 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:09,670 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:10,759 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:11,259 - evoagentx_medical_engine - INFO - 成功索引 227 个文档块
+2025-08-03 14:50:11,259 - evoagentx_medical_workflow - INFO - 医学文档索引建立完成
+2025-08-03 14:50:11,259 - evoagentx_medical_workflow - INFO - 开始执行医疗分析: 患者男性，58岁，近期出现体重下降，皮肤黄疸，上腹部胀痛，ALT和胆红素升高
+2025-08-03 14:50:11,259 - evoagentx_medical_workflow - INFO - 执行医学文档检索...
+2025-08-03 14:50:11,783 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-03 14:50:11,790 - evoagentx.rag.postprocessors.base - INFO - Reranked to 5 chunks
+2025-08-03 14:50:11,791 - evoagentx_medical_workflow - INFO - 执行EvoAgentX医疗分析工作流...
+2025-08-03 14:50:11,791 - evoagentx_medical_workflow - INFO - 步骤1: 医学文档检索 - 已完成
+2025-08-03 14:50:11,791 - evoagentx_medical_workflow - INFO - 步骤2: 执行医学推理分析
+2025-08-03 14:50:12,864 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 14:50:35,824 - evoagentx_medical_workflow - INFO - 步骤3: 执行医学工具咨询
+2025-08-03 14:50:35,826 - tooluniverse_integration - INFO - 搜索诊断相关信息: 病理生理机制分析：肝硬化可能导致肝功能不全，出现黄疸、腹胀等症状；肝癌可能引起肝脏局部病变，导致肝功能异常和疼痛；胆囊炎和胆石症可能引起胆道阻塞，导致胆汁淤积和黄疸；胆管癌可能引起胆道狭窄或阻塞，导致胆汁淤积和黄疸。
+2025-08-03 14:50:35,827 - tooluniverse_integration - INFO - 搜索诊断相关信息: 需要排除的疾病：肝炎、胰腺炎、胆囊息肉、肝脏脂肪肝等
+2025-08-03 14:50:37,297 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 14:50:58,139 - evoagentx_medical_workflow - INFO - 步骤4: 生成综合医学报告
+2025-08-03 14:50:59,626 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 14:51:37,231 - evoagentx_medical_workflow - INFO - 工作流结果已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\results\evoagentx_medical_analysis_20250803_145137.json
+2025-08-03 14:51:37,231 - evoagentx_medical_workflow - INFO - 医疗分析工作流执行完成

@@ -1,0 +1,52 @@
+2025-09-23 11:49:11,041 - evoagentx_medical_engine - INFO - 医疗RAG引擎初始化完成
+2025-09-23 11:49:11,045 - tooluniverse_integration - INFO - ToolUniverse工具引擎初始化成功
+2025-09-23 11:49:11,045 - tooluniverse_integration - ERROR - 初始化ToolUniverse时出错: 'ToolUniverse' object has no attribute 'get_all_tools_names'
+2025-09-23 11:49:11,049 - evoagentx_medical_workflow - INFO - 工作流图已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\medical_workflow_graph.json
+2025-09-23 11:49:13,499 - evoagentx_medical_workflow - INFO - EvoAgentX工作流设置完成
+2025-09-23 11:49:13,499 - evoagentx_medical_workflow - INFO - 医疗工作流执行器初始化完成
+2025-09-23 11:49:13,499 - evoagentx_medical_workflow - INFO - 正在建立医学文档索引...
+2025-09-23 11:49:13,499 - evoagentx_medical_engine - INFO - 开始索引 2 个医学PDF文档...
+2025-09-23 11:49:13,499 - evoagentx_medical_engine - INFO - 处理文档: ene.14412.pdf
+2025-09-23 11:49:13,823 - evoagentx_medical_engine - INFO - 处理文档: Euro J of Neurology - 2021 - Bassetti - European guideline and expert statements on the management of narcolepsy in adults.pdf
+2025-09-23 11:49:22,528 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:23,530 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:24,747 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:25,750 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:27,034 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:28,084 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:29,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:30,084 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:31,843 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:32,766 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:33,807 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:34,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:36,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:38,074 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:39,432 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:40,591 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:41,808 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:43,186 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:44,214 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:45,396 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:46,341 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:47,728 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:48,693 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:49,241 - evoagentx_medical_engine - INFO - 成功索引 227 个文档块
+2025-09-23 11:49:49,242 - evoagentx_medical_workflow - INFO - 医学文档索引建立完成
+2025-09-23 11:49:49,242 - evoagentx_medical_workflow - INFO - 开始执行医疗分析: 患者男性，27岁，出现眼球充血，咳嗽，打喷嚏，流泪，腹泻
+2025-09-23 11:49:49,242 - evoagentx_medical_workflow - INFO - 执行医学文档检索...
+2025-09-23 11:49:49,952 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-23 11:49:49,959 - evoagentx.rag.postprocessors.base - INFO - Reranked to 5 chunks
+2025-09-23 11:49:49,960 - evoagentx_medical_workflow - INFO - 执行EvoAgentX医疗分析工作流...
+2025-09-23 11:49:49,960 - evoagentx_medical_workflow - INFO - 步骤1: 医学文档检索 - 已完成
+2025-09-23 11:49:49,960 - evoagentx_medical_workflow - INFO - 步骤2: 执行医学推理分析
+2025-09-23 11:49:51,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-23 11:50:19,914 - evoagentx_medical_workflow - INFO - 步骤3: 执行医学工具咨询
+2025-09-23 11:50:19,914 - tooluniverse_integration - INFO - 搜索诊断相关信息: 病理生理机制分析：急性上呼吸道感染和病毒性感冒是由于病毒或者细菌感染引起的，过敏性鼻炎是由于对某些物质过敏引起的，食物中毒是由于食物中的有害物质引起的，消化系统疾病可能是由于消化系统的某些功能障碍引起的。
+2025-09-23 11:50:19,915 - tooluniverse_integration - INFO - 搜索诊断相关信息: 需要排除的疾病：需要排除的疾病包括结膜炎、哮喘、胃肠炎等。
+2025-09-23 11:50:19,915 - tooluniverse_integration - INFO - 搜索诊断相关信息: 鉴别要点和关键特征：结膜炎主要表现为眼球充血，但不会出现咳嗽和打喷嚏；哮喘主要表现为咳嗽，但不会出现眼球充血和腹泻；胃肠炎主要表现为腹泻，但不会出现眼球充血和咳嗽。
+2025-09-23 11:50:21,125 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-23 11:50:42,933 - evoagentx_medical_workflow - INFO - 步骤4: 生成综合医学报告
+2025-09-23 11:50:45,352 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-23 11:51:17,144 - evoagentx_medical_workflow - INFO - 工作流结果已保存到: D:\test\EAX_Medical_Agent_1\MedicalAgentX\outputs\results\evoagentx_medical_analysis_20250923_115117.json
+2025-09-23 11:51:17,145 - evoagentx_medical_workflow - INFO - 医疗分析工作流执行完成

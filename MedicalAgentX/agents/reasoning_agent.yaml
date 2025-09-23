@@ -1,0 +1,124 @@
+name: ReasoningAgent
+type: llm
+model: gpt-4
+description: 基于检索到的相似病例进行医学推理和病因分析
+
+config:
+  temperature: 0.3
+  max_tokens: 2000
+  model_params:
+    top_p: 0.9
+    frequency_penalty: 0.1
+    presence_penalty: 0.1
+
+system_prompt: |
+  你是一位资深的临床医生和医学专家，具有丰富的诊断经验。
+  你的任务是基于患者症状和相似病例进行专业的医学分析。
+  
+  分析原则：
+  1. 基于循证医学，客观分析症状
+  2. 考虑多种可能的鉴别诊断
+  3. 提供有依据的临床建议
+  4. 强调需要进一步检查确认
+  5. 保持医学严谨性和专业性
+
+prompt_template: |
+  ## 医学病例分析任务
+  
+  ### 患者主诉症状：
+  {{ symptom_text }}
+  
+  ### 检索到的相似病例：
+  {% for case in retrieval_results %}
+  **病例 {{ loop.index }}** (相似度: {{ case.similarity_score }})
+  - 来源: {{ case.source }}
+  - 内容: {{ case.content }}
+  ---
+  {% endfor %}
+  
+  ### 分析要求：
+  请基于上述信息进行系统性医学分析，包括：
+  
+  1. **症状分析**
+     - 主要症状特征
+     - 伴随症状
+     - 症状的医学意义
+  
+  2. **可能病因**
+     - 最可能的3-5个病因
+     - 每个病因的支持证据
+     - 病理生理机制
+  
+  3. **鉴别诊断**
+     - 需要排除的疾病
+     - 鉴别要点
+  
+  4. **检查建议**
+     - 必要的实验室检查
+     - 影像学检查
+     - 特殊检查
+  
+  5. **初步处理建议**
+     - 紧急处理措施（如有）
+     - 症状管理
+     - 进一步诊疗方向
+  
+  6. **风险评估**
+     - 病情严重程度
+     - 可能的并发症
+     - 预后评估
+  
+  ### 注意事项：
+  - 本分析仅供医疗专业人员参考
+  - 最终诊断需要结合完整的临床信息
+  - 建议及时就医进行专业诊断
+
+inputs:
+  - name: symptom_text
+    type: string
+    description: 患者症状描述
+    required: true
+  - name: retrieval_results
+    type: array
+    description: 检索到的相似病例
+    required: true
+  - name: patient_info
+    type: object
+    description: 患者基本信息（年龄、性别等）
+    required: false
+
+outputs:
+  - name: medical_analysis
+    type: string
+    description: 完整的医学分析报告
+  - name: primary_diagnoses
+    type: array
+    description: 主要诊断方向列表
+  - name: recommended_tests
+    type: array
+    description: 建议检查项目
+  - name: risk_level
+    type: string
+    description: 风险等级评估
+  - name: urgency
+    type: string
+    description: 紧急程度
+
+execution:
+  timeout: 60
+  retry_count: 2
+  error_handling: graceful
+
+quality_checks:
+  - medical_terminology_check
+  - logical_consistency_check
+  - completeness_check
+
+metadata:
+  version: "1.0"
+  medical_domains:
+    - "内科诊断"
+    - "症状分析"
+    - "病因推理"
+    - "鉴别诊断"
+  evidence_level: "AI辅助分析"
